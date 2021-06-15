@@ -1,5 +1,11 @@
+import styles from './index.module.scss'
+
 const Button = (): JSX.Element => {
-  return <button onClick={() => alert('button click')}>button</button>
+  return (
+    <button className={styles.container} onClick={() => alert('button click')}>
+      button
+    </button>
+  )
 }
 
 export default Button
